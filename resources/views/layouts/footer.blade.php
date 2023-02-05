@@ -4,7 +4,7 @@
     <!-- Copyright -->
     <div class="text-center p-2 fixed-bottom" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Copyright:
-      <a class="text-reset fw-bold" href="https://portfolio.sazonmahmud.net/">Sazon Mahmud</a>
+      <a class="text-reset fw-bold" href="https://portfolio.sazonmahmud.net/" style="font-family: 'Concert One', cursive;">Sazon Mahmud</a>
     </div>
     <!-- Copyright -->
   </footer>

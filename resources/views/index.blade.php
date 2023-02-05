@@ -6,10 +6,10 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col">
-                        <a class="btn btn-success" href="{{ url('/add-user') }}">Add User</a>
+                        <a class="btn btn-success" href="{{ Route('add.user') }}">Add User</a>
                     </div>
                     <div class="col">
-                        <h2>All Data is here</h2>
+                        <h2 style="font-family: 'Concert One', cursive;">All Registered Data from Database</h2>
                     </div>
                 </div>
             </div>

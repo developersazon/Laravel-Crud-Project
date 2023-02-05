@@ -9,7 +9,7 @@
                         <a class="btn btn-success" href="{{ url('/') }}">Back</a>
                     </div>
                     <div class="col">
-                        <h2>All Data is here</h2>
+                        <h2 style="font-family: 'Concert One', cursive;">Add New User</h2>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                         {{ Session::get('msg') }}
                     </p>
                 @endif
-                <form action="{{ url('/add-user') }}" method="post">
+                <form action="{{ Route('add.user') }}" method="post">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     @csrf
                     <div class="row mb-4">
@@ -86,7 +86,7 @@
                     <!-- Submit button -->
                     <div class="row px-4">
                         <div class="col">
-                            <button type="submit" class="btn btn-primary btn-block">Send Now</button>
+                            <button type="submit" class="btn btn-success btn-block">Add Now</button>
                         </div>
                         <div class="col">
                             <a class="btn btn-danger btn-block" href="{{ url('/') }}">Cancel Now</a>
