@@ -20,7 +20,8 @@ class CrudController extends Controller
             'email'=> 'required|email',
             'password'=> 'required',
         ]);
-
+        // p($request->all());
+        // die();
         $data = new Student();
         $data->name = $request->name;
         $data->email = $request->email;
@@ -34,7 +35,7 @@ class CrudController extends Controller
     public function showData(){
         //$students = Student::all(); //send all data at a time
         //$students = Student::paginate(3); //send  minimum data as per your requirement
-        $students = Student::simplePaginate(4); //Previous and Next Pagination style
+        $students = Student::simplePaginate(3); //Previous and Next Pagination style
         $data = compact('students');
         return view('index')->with($data);
 
